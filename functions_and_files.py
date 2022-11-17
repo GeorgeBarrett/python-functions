@@ -39,10 +39,13 @@ current_line = 1
 print_a_line(current_line, current_file)
 
 # this redifines the variable so that it is the original variable plus 1 (the plus one moves the ouptut onto the next line of the file)
-current_line = current_line + 1
+current_line += 1
 
 print_a_line(current_line, current_file)
 
-current_line = current_line + 1
+# this reads current_line = current_line + 1. shorthand 
+current_line += 1
 
 print_a_line(current_line, current_file)
+
+# the print_a_line function is called three times, which tells line_count that there are three lines in the file
